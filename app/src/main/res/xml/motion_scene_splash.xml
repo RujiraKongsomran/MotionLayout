@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@layout/activity_login"
+        motion:constraintSetStart="@layout/activity_splash"
+        motion:duration="5000">
+
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="65"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/ivLogo"
+                motion:percentX="0"
+                motion:percentY="0" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/ivLogoRays"
+                motion:percentX="1"
+                motion:percentY="1" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/ivLogo"
+                motion:percentX="1"
+                motion:percentY="1" />
+            <KeyPosition
+                motion:framePosition="65"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/ivLogoRays"
+                motion:percentX="0"
+                motion:percentY="0" />
+            <KeyAttribute
+                android:rotation="0"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/ivLogoRays" />
+            <KeyAttribute
+                android:rotation="180"
+                motion:framePosition="85"
+                motion:motionTarget="@+id/ivLogoRays" />
+            <KeyPosition
+                motion:framePosition="85"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/ivCloudLeft"
+                motion:percentX="1"
+                motion:percentY="1" />
+            <KeyPosition
+                motion:framePosition="85"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/ivCloudRight"
+                motion:percentX="1"
+                motion:percentY="1" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:motionTarget="@+id/linlayInputs" />
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="85"
+                motion:motionTarget="@+id/linlayInputs" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:motionTarget="@+id/tvForgotPassword" />
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="85"
+                motion:motionTarget="@+id/tvForgotPassword" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:percentX="0"
+                motion:percentY="0"
+                motion:motionTarget="@+id/tvRegister"/>
+            <KeyPosition
+                motion:framePosition="85"
+                motion:percentX="0"
+                motion:percentY="0"
+                motion:motionTarget="@+id/tvRegister"/>
+        </KeyFrameSet>
+
+    </Transition>
+</MotionScene>
